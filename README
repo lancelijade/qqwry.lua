@@ -21,7 +21,8 @@ Note
     By using some third party modules, such as agentzh's lua-php-utils
     (https://github.com/agentzh/lua-php-utils), or LuaJIT's BitOp
     (http://bitop.luajit.org/), the performance of this module can be optimized
-    much.
+    much. Also, read qqwry.dat's data into memory entirely and avoid file 
+    opeartions will give this program another pair of fatastic wings. :)
 
 Author
     Lance Li <lancelijade@gmail.com>

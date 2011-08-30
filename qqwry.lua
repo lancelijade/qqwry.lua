@@ -18,7 +18,7 @@ local string = require("string")
 
 module("qqwry")
 
-local ipdat_path = "/usr/local/openresty/nginx/conf/ipdat/"
+local ipdat_path = "/path/to/qqwry.dat/"
 local qqwry = nil
 
 -- binary string to number big-endian

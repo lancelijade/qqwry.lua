@@ -1,0 +1,58 @@
+Name
+    qqwry.lua - A Lua interface to famous IP <=> Location database qqwry.dat
+
+Synopsis
+    local qqwry = require("qqwry")
+
+    local t = qqwry.query("8.8.8.8")
+        -- t == {"美国", "加利福尼亚州山景市谷歌公司DNS服务器"}
+
+    local v = qqwry.version()
+        -- v == {"纯真网络", "2011年08月25日IP数据"}
+
+Installation
+    Put the qqwry.lua into any your Lua module search path
+
+Note
+    This implementation does not depend on any module other than standard Lua
+    5.1 redistribution package provided, that means you can use it on the fly
+    with a standard Lua 5.1 installation. 
+
+    By using some third party modules, such as agentzh's lua-php-utils
+    (https://github.com/agentzh/lua-php-utils), or LuaJIT's BitOp
+    (http://bitop.luajit.org/), the performance of this module can be optimized
+    much.
+
+Author
+    Lance Li <lancelijade@gmail.com>
+
+Copyright & License
+    This library is licenced under the BSD license.
+
+    Copyright (C) 2011, Lance Li <lancelijade@gmail.com>.
+
+    All rights reserved.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+        * Redistributions of source code must retain the above copyright
+        notice, this list of conditions and the following disclaimer.
+
+        * Redistributions in binary form must reproduce the above copyright
+        notice, this list of conditions and the following disclaimer in the
+        documentation and/or other materials provided with the distribution.
+
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+    "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+    A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+    HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+    SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+    TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+    PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+    LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+    NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
